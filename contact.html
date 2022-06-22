@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	   <title>My Portfolio</title>
+	   <link rel="shortcut icon" href="http://wikipedia.com/static/favicon/wikipedia.ico">
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
+      <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/style.production.css">
+	</head>
+
+	<body>
+
+    <header class="page-header">
+      <!-- Add Logo here -->
+      <img src="img/logo.svg" alt="logo" class="page-header__item" >
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+           <li role="presentation">
+              <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item">Home</a>
+           </li>
+           <li role="presentation">
+              <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+           </li>
+           <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item">Work</a>
+         </li>
+          <li role="presentation">
+              <a href="contact.html" role="menuitem" class="navigation-list__item--active">Contact</a>
+           </li>
+        </ul>
+     </nav>
+    </header>
+
+    <div>
+        <h1>Contact</h1>
+    </div>
+
+    <div>
+        Tel <a href="tel:+2062956990">+206 2956990</a><br>
+        Skype <a href="skype:christieloughlin">christieloughlin</a><br>
+        <a href=""mailto:cloughlin470@gmail.com">cloughlin470@gmail.com</a>
+      </div>
+
+      <div>
+        <a href="mailto:cloughlin470@gmail.com">Contact me</a>
+      </div>
+
+      <form action="" method="post">
+        <label for="contact-email">E-mail: </label>
+        <input type="email" id="contact-email" required>
+
+        <label for="contact-telephone">Telephone: </label>
+        <input type="tel" id="contact-telephone">
+
+        <label for="contact-message">Message: </label>
+        <textarea id="contact-message" maxlength="240" required></textarea>
+
+        <input type="submit" value="Send message">
+      </form>
+
+
+   <!-- This is to be checked later
+     <script src="js/tota11y.min.js"></script> -->
+    </body>
+
+</html>
