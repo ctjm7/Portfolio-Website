@@ -24,6 +24,9 @@ body {
   line-height: 1.6;
   height: 100vh;
 }
+body > div, body > section {
+  padding: 0 20px
+}
 
 h1 {
   font-size: var(--font-h1-size);
@@ -64,9 +67,9 @@ button, .button {
 
 button:hover, button:focus, .button:hover, .button:focus {
 /* lets the mouse appear as a hand when hovering over the button */
-cursor: pointer;
+  cursor: pointer;
 /* reduces the opacity of the button to 80% */
-opacity: 0.8;
+  opacity: 0.8;
 }
 
 .button_secondary {
@@ -138,13 +141,23 @@ opacity: 0.8;
 
 .about {
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
 }
 .enjoy-list {
-  list-style: none;
+  list-style-type: none;
 }
 
+.contact-info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-form {
+  padding: 0 20px;
+}
 /* start grid fallback */
 .project-list__item {
   display: inline-block;
@@ -173,11 +186,11 @@ opacity: 0.8;
 }
 
 @keyframes bird-move {
-  from {transform: translate(0px, 50px);}
-  to {transfrom: translate(0px, 80px);}
+  from {transform: translate(0, 50px);}
+  to {transfrom: translate(0, 80px);}
 }
 #path200, #path202, #path204, #path210, #path212, #path216  {
-  animation: 8s bird-move infinite alternate linear;
+  animation: bird-move 8s linear 0 infinite alternate;
 }
 
 @media all and (max-width: 500px) {
