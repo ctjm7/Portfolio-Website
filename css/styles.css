@@ -6,7 +6,6 @@
   --dark-grey: #2b2b2b;
   --light-gray: lightgray;
   --border-color: rgba(0, 0, 0, 0.3);
-  --white: white;
   --font-body-size: 18px;
   --font-h1-size: 30px;
   --font-bold: 700;
@@ -34,7 +33,6 @@ h1 {
 }
 
 a:visited {
-  /* visited link */
   color: var(--visited-color);
 }
 
@@ -44,23 +42,18 @@ a:hover , a:focus {
 }
 
 a:active {
-  /* selected link */
   color: var(--active-color);
 }
 
 button, .button {
   /* overwrites browser defaults and resets the border */
   border: none;
-  /* takes the font from the outer container */
   font-family: inherit;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: var(--primary-color);
-  color: var(--white);
+  color: white;
   text-decoration: none;
-  /*adds spacing to the button */
   padding: 10px;
   border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid. and a color in RGBA format */
   border-bottom: 2px solid var(--border-color);
   transition: 0.2s opacity;
 }
@@ -143,20 +136,24 @@ button:hover, button:focus, .button:hover, .button:focus {
   display: flex;
   width: 100%;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 .enjoy-list {
   list-style-type: none;
 }
+.skills-table {
+  margin: 0 auto;
+}
 
 .contact-info {
   display: flex;
-  width: 100%;
   flex-direction: column;
-  justify-content: center;
 }
 .contact-form {
-  padding: 0 20px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
 }
 /* start grid fallback */
 .project-list__item {
@@ -197,10 +194,16 @@ button:hover, button:focus, .button:hover, .button:focus {
   .grid {
     grid-template-columns: 1fr;
   }
+  .contact-form {
+    width: 100%;
+  }
 }
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
+  }
+  .contact-form {
+    width: 75%;
   }
 }
 @media all and (max-width: 750px) {

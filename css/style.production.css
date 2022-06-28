@@ -16,6 +16,9 @@ body {
   line-height: 1.6;
   height: 100vh;
 }
+body > div, body > section {
+  padding: 0 20px
+}
 
 h1 {
   font-size: 30px;
@@ -23,7 +26,6 @@ h1 {
 }
 
 a:visited {
-  /* visited link */
   color: #05676e;
 }
 
@@ -33,23 +35,18 @@ a:hover , a:focus {
 }
 
 a:active {
-  /* selected link */
   color: #489c79;
 }
 
 button {
   /* overwrites browser defaults and resets the border */
   border: none;
-  /* takes the font from the outer container */
   font-family: inherit;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: #357b70;
   color: white;
   text-decoration: none;
-  /*adds spacing to the button */
   padding: 10px;
   border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid. and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
@@ -59,16 +56,12 @@ button {
 .button {
   /* overwrites browser defaults and resets the border */
   border: none;
-  /* takes the font from the outer container */
   font-family: inherit;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: #357b70;
   color: white;
   text-decoration: none;
-  /*adds spacing to the button */
   padding: 10px;
   border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid. and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
@@ -77,9 +70,9 @@ button {
 
 button:hover, button:focus, .button:hover, .button:focus {
 /* lets the mouse appear as a hand when hovering over the button */
-cursor: pointer;
+  cursor: pointer;
 /* reduces the opacity of the button to 80% */
-opacity: 0.8;
+  opacity: 0.8;
 }
 
 .button_secondary {
@@ -169,18 +162,42 @@ opacity: 0.8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .enjoy-list {
-  list-style: none;
+  list-style-type: none;
+}
+.skills-table {
+  margin: 0 auto;
 }
 
+.contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact-form {
+  padding: 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+}
 /* start grid fallback */
 .project-list__item {
   display: inline-block;
@@ -214,17 +231,17 @@ opacity: 0.8;
 }
 
 @-webkit-keyframes bird-move {
-  from {-webkit-transform: translate(0px, 50px);transform: translate(0px, 50px);}
-  to {transfrom: translate(0px, 80px);}
+  from {-webkit-transform: translate(0, 50px);transform: translate(0, 50px);}
+  to {transfrom: translate(0, 80px);}
 }
 
 @keyframes bird-move {
-  from {-webkit-transform: translate(0px, 50px);transform: translate(0px, 50px);}
-  to {transfrom: translate(0px, 80px);}
+  from {-webkit-transform: translate(0, 50px);transform: translate(0, 50px);}
+  to {transfrom: translate(0, 80px);}
 }
 #path200, #path202, #path204, #path210, #path212, #path216  {
-  -webkit-animation: 4s bird-move infinite alternate linear;
-          animation: 4s bird-move infinite alternate linear;
+  -webkit-animation: bird-move 8s linear 0 infinite alternate;
+          animation: bird-move 8s linear 0 infinite alternate;
 }
 
 @media all and (max-width: 500px) {
@@ -232,11 +249,17 @@ opacity: 0.8;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+  .contact-form {
+    width: 100%;
+  }
 }
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+  }
+  .contact-form {
+    width: 75%;
   }
 }
 @media all and (max-width: 750px) {
