@@ -187,7 +187,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   to {transfrom: translate(0, 80px);}
 }
 #path200, #path202, #path204, #path210, #path212, #path216  {
-  animation: bird-move 8s linear 0 infinite alternate;
+  animation: 8s bird-move infinite alternate linear;
 }
 
 @media all and (max-width: 500px) {
@@ -196,6 +196,13 @@ button:hover, button:focus, .button:hover, .button:focus {
   }
   .contact-form {
     width: 100%;
+  }
+  .profile__portrait {
+    float: left;
+    width: 150px;
+    height: auto;
+    margin-right: 40px;
+    border-radius: 50%;
   }
 }
 @media all and (min-width: 500px) and (max-width: 750px) {
