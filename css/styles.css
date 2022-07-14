@@ -1,10 +1,8 @@
 :root {
   --primary-color: #357b70;
-  --secondary-color: #e0b354;
   --active-color: #489c79;
   --visited-color: #05676e;
   --dark-grey: #2b2b2b;
-  --light-gray: lightgray;
   --border-color: rgba(0, 0, 0, 0.3);
   --font-body-size: 18px;
   --font-h1-size: 30px;
@@ -63,11 +61,6 @@ button:hover, button:focus, .button:hover, .button:focus {
   cursor: pointer;
 /* reduces the opacity of the button to 80% */
   opacity: 0.8;
-}
-
-.button_secondary {
-  background-color: var(--secondary-color);
-  color: var(--dark-grey);
 }
 
 .navigation-list__item--active {
@@ -132,15 +125,19 @@ button:hover, button:focus, .button:hover, .button:focus {
   margin-left: 15px;
 }
 
-.about {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
+.about, .cv {
+  text-align: center;
+}
+.mountain-bird {
+  padding: 20px;
+  text-align: center;
 }
 .enjoy-list {
+  text-align: center;
   list-style-type: none;
+  padding-inline-start: 0;
 }
+
 .skills-table {
   margin: 0 auto;
 }
