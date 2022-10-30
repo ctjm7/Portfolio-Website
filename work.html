@@ -5,17 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <title>My Portfolio</title>
-    <link rel="shortcut icon" href="img/cl_favicon.ico" sizes="32x32">
+    <link rel="shortcut icon" href="img/cfavicon.ico" sizes="32x32">
+    <style>
+			body {
+				background-image: linear-gradient(to bottom right, lightblue, rgb(102, 215, 198), pink);
+			}
+		</style>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Noto+Sans:wght@400;600&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
 
 	<body>
 
     <header class="page-header">
       <a href="index.html">
-        <img src="img/logo.svg" alt="logo" class="page-header__item" >
+        <p class="c-logo">C</p>
       </a>
       <nav class="main-navigation page-header__item">
         <ul role="menubar" class="navigation-list">
@@ -35,37 +40,43 @@
      </nav>
     </header>
 
-    <section>
-      <h1>Work</h1>
+    <div class="work">
+      <h1>&nbsp;Work</h1>
       <div class="project-list">
         <div class="project-list__item">
-          <h2>Mobile web app</h2>
+          <h3>Meet App</h3>
+          <p>This app was created with React using a test driven approach. It utilizes
+            Google's Calendar API. Its function is to show developers around the world
+            events related to web development.
+          </p>
+          <a href="https://ctjm7.github.io/meet">
+            <img src="img/meet-screenshot.png" class="project-img" alt="meet application website">
+          </a>
+          <a href="https://github.com/ctjm7/meet" target="_blank">
+            <img src="img/github_icon.svg" class="project-github" alt="meet on github">
+          </a>
         </div>
         <div class="project-list__item">
-          <h2>Lorem Ipsum</h2>
+          <h3>Lorem Ipsum</h3>
         </div>
         <div class="project-list__item">
-          <h2>Lorem Ipsum</h2>
+          <h3>Lorem Ipsum</h3>
         </div>
         <div class="project-list__item">
-          <h2>Lorem Ipsum</h2>
+          <h3>Lorem Ipsum</h3>
         </div>
         <div class="project-list__item">
-          <h2>Lorem Ipsum</h2>
-        </div>
-        <div class="project-list__item">
-          <h2>Your Project?</h2>
+          <h3>Your Project?</h3>
         </div>
       </div>
-    </section>
+    </div>
 
     <footer class="page-footer">
-      <p>Find me on</p>
+      <p></p>
       <div class="social-media">
         <a href="https://github.com/ctjm7" target="_blank">
           <img src="img/github_icon.svg" alt="Github">
         </a>
-        <img src="img/twitter_bird_icon.svg" alt="Twitter">
         <a href="https://www.linkedin.com/in/christie-loughlin" target="_blank">
           <img src="img/linkedin_icon.svg" alt="LinkedIn">
         </a>

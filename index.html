@@ -5,17 +5,22 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>My Portfolio</title>
-		<link rel="shortcut icon" href="img/cl_favicon.ico" sizes="32x32">
+		<link rel="shortcut icon" href="img/cfavicon.ico" sizes="32x32">
+		<style>
+			body {
+				background-image: linear-gradient(to bottom right, lightblue, rgb(121, 217, 203), pink);
+			}
+		</style>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/style.production.css">
+		<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Noto+Sans:wght@400;600&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
 
 	<body>
 
 			<header class="page-header">
 				<a href="index.html">
-					<img src="img/logo.svg" alt="logo" class="page-header__item" >
+					<p class="c-logo">C</p>
 				</a>
 				<nav class="main-navigation page-header__item">
 					<ul role="menubar" class="navigation-list">
@@ -38,21 +43,20 @@
 			<div class="profile">
 				<img src="img/portrait.jpg" class="profile__portrait" alt="Christie Loughlin Portrait">
 				<div class="profile-text">
-				<h1>Hello World!</h1>
-				<p>
-					My name is Christie Loughlin. I am a web developer from the United States.
-				</p>
-				<a href="https://github.com/ctjm7" target="_blank">Check out some of my code</a>
+					<p id="hi-text">Hi, my name is</p>
+					<p class="name">CHRISTIE</p>
+					<p class="name" id="last-name">LOUGHLIN</p>
+					<p id="engineer-text">and I'm a software engineer from Seattle, WA</p>
+					<!-- <a href="work.html" class="work-link">My Projects</a> -->
 				</div>
 			</div>
 
 			<footer class="page-footer">
-				<p>Find me on</p>
+				<p></p>
 				<div class="social-media">
 					<a href="https://github.com/ctjm7" target="_blank">
 						<img src="img/github_icon.svg" alt="Github">
 					</a>
-					<img src="img/twitter_bird_icon.svg" alt="Twitter">
   				<a href="https://www.linkedin.com/in/christie-loughlin" target="_blank">
 						<img src="img/linkedin_icon.svg" alt="LinkedIn">
 					</a>
