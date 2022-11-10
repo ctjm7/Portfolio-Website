@@ -173,6 +173,15 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .rainier {
   float: right;
+  margin: 5%;
+  width: 300px;
+  height: auto;
+  border-radius: 30px;
+}
+
+.sun {
+  float: left;
+  margin: 5%;
   width: 300px;
   height: auto;
   border-radius: 30px;
@@ -242,6 +251,68 @@ margin: 3% 1%;
  .project-list__item h3{
   margin: 0 0;
  }
+
+ .case-study {
+  font-size: 14px;
+ }
+
+ .movie-theater {
+  margin: 60px;
+  width: 500px;
+  height: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+ .doc-img {
+  width: 400px;
+  height: auto;
+  margin: 30px;
+ }
+
+.movie-app {
+  /* float: right; */
+  /* display: block; */
+  width: 400px;
+  height: auto;
+  margin: 20px;
+  padding: 20px;
+}
+
+ .login-app {
+  width: 400px;
+  height: auto;
+  margin: 20px;
+
+ }
+.case-header {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 25px;
+}
+
+.case-content {
+  margin-top: 70px;
+  display:flex;
+  flex-direction: row;
+  margin-left: 30px;
+  flex-wrap: wrap;
+
+}
+
+.case-text {
+  /* background-color: aliceblue; */
+  border-radius: 10px;
+  padding: 5px 15px;
+  width: 400px;
+  margin: 10px;
+
+ }
+
+ .space {
+  width: 400px;
+ }
+
 
 @supports (display: grid) {
   .project-list {

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+	   <title>My Portfolio</title>
+      <link rel="shortcut icon" href="img/cfavicon.ico" sizes="32x32">
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
+      <style>
+			body {
+				background-color: lightblue;
+			}
+		</style>
+      <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Noto+Sans:wght@400;600&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+
+	<body class="case-study">
+    <header>
+      <h2 class="case-header">Case Study&nbsp; - &nbsp;See You at the Movies! App</h2>
+    </header>
+
+    <div >
+      <img src="img/movie-theater.jpg" class="movie-theater" alt="Inside of a movie theater">
+    </div>
+
+    <div class="case-content">
+      <div class="case-text">
+        <h3>The challenge</h3>
+          <p>
+            To create a web app that provides users with access to information about different movies, directors, and genres. Users will be able to sign up, update their personal information, and create a list of their favorite movies.
+          </p>
+      </div>
+      <div >
+        <img src="img/doc-img.png" class="doc-img" alt="Screenshot of section of the documentation">
+      </div>
+      <div class="case-text">
+        <h3>The goal</h3>
+          <p>
+            Build a project from backend to frontend to develop my skills as full-stack Software Engineer. This was part of the curriculum in CareerFoundry's Web Development Program. To produce an application that utilizes the "MERN" stack (MongoDB, Express, React, and Node.js).
+          </p>
+      </div>
+      <div class="space">
+      </div>
+      <div >
+        <img src="img/login-img.png" class="login-app" alt="Screenshot of See You at the Movies app login">
+      </div>
+      <div class="case-text" id="case-process">
+        <h3>The process</h3>
+          <p>Server-Side:</p>
+          <p>
+            A database was created using MongoDB, a non-relational database. The data for the movies collection is stored in JSON format. Access was provided via a RESTful API built with Node.js and Express. The API was tested using Postman. A basic HTTP and JWT (token-based) authentication were implemented. <a href="https://github.com/ctjm7/movie-api"><u>movie-api on Github</u></a>
+          </p>
+          <p>Client-Side:</p>
+          <p>
+            This is a single-page application using React. The app consists of several components, interface views. The login gives you access to the main view, showing a list of all movies. When you can enter the single movie view it provides movie information and the ability to add to your favorites list. A profile view shows user information and the ability to update user info. A registration view is accessible if a user has not yet signed up. <a href="https://github.com/ctjm7/movie-api-client"><u>movie-api-client on Github</u></a>
+          </p>
+      </div>
+      <div class="case-text">
+        <h3>The results</h3>
+          <p>
+            This was a rewarding and at times challenging endeavor. I was introduced to several new software applications. It involved learning and familiarizing myself with React. I also had to dive into debugging and referencing documentation. This process taught me perseverance and the need to look at problems from different angles. Now after all that hard work we should all take a break. <a href="https://seeyouatthemovies.netlify.app"><b>"See You at the Movies!"</b></a>
+          </p>
+      </div>
+      <div >
+        <img src="img/movieapp-img.png" class="movie-app" alt="Screenshot of See You at the Movies app">
+      </div>
+    </div>
+
+    <footer>
+      <button class="button" onclick="history.back()">Back</button>
+    </footer>
+  </body>
+</html>
