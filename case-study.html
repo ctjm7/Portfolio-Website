@@ -17,9 +17,31 @@
 	</head>
 
 	<body class="case-study">
-    <header>
-      <h2 class="case-header">Case Study&nbsp; - &nbsp;See You at the Movies! App</h2>
+
+    <header class="page-header">
+      <a href="index.html">
+        <p class="c-logo">C</p>
+      </a>
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+           <li role="presentation">
+              <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item">Home</a>
+           </li>
+           <li role="presentation">
+              <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+           </li>
+           <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+         </li>
+          <li role="presentation">
+              <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+           </li>
+        </ul>
+     </nav>
     </header>
+    <div>
+      <h2 class="case-header">Case Study&nbsp; - &nbsp;See You at the Movies! App</h2>
+    </div>
 
     <div >
       <img src="img/movie-theater.jpg" class="movie-theater" alt="Inside of a movie theater">
@@ -57,19 +79,20 @@
             This is a single-page application using React. The app consists of several components, interface views. The login gives you access to the main view, showing a list of all movies. When you can enter the single movie view it provides movie information and the ability to add to your favorites list. A profile view shows user information and the ability to update user info. A registration view is accessible if a user has not yet signed up. <a href="https://github.com/ctjm7/movie-api-client"><u>movie-api-client on Github</u></a>
           </p>
       </div>
+      <div >
+        <img src="img/movieapp-img.png" class="movie-app" alt="Screenshot of See You at the Movies app">
+      </div>
+    </div>
       <div class="case-text">
         <h3>The results</h3>
           <p>
             This was a rewarding and at times challenging endeavor. I was introduced to several new software applications. It involved learning and familiarizing myself with React. I also had to dive into debugging and referencing documentation. This process taught me perseverance and the need to look at problems from different angles. Now after all that hard work we should all take a break. <a href="https://seeyouatthemovies.netlify.app"><b>"See You at the Movies!"</b></a>
           </p>
       </div>
-      <div >
-        <img src="img/movieapp-img.png" class="movie-app" alt="Screenshot of See You at the Movies app">
-      </div>
-    </div>
+
 
     <footer>
-      <button class="button" onclick="history.back()">Back</button>
+      <button class="back-button button" onclick="history.back()">Back</button>
     </footer>
   </body>
 </html>
