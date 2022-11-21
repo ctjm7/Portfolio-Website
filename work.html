@@ -6,11 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <title>My Portfolio</title>
     <link rel="shortcut icon" href="img/cfavicon.ico" sizes="32x32">
-    <style>
-			body {
-				background-image: linear-gradient(to bottom right, lightblue, rgb(102, 215, 198), pink);
-			}
-		</style>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Noto+Sans:wght@400;600&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -31,7 +26,7 @@
               <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
            </li>
            <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+            <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Projects</a>
          </li>
           <li role="presentation">
               <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
@@ -41,10 +36,10 @@
     </header>
 
     <div class="work">
-      <h1>&nbsp;Work</h1>
+      <h1>My Projects</h1>
       <div class="project-list">
         <div class="project-list__item">
-          <h3>Meet App</h3>
+          <h3>Meet</h3>
           <p>This app was created with React using a test driven approach. It utilizes
             Google's Calendar API. Its function is to show developers around the world
             events related to web development.
@@ -52,29 +47,62 @@
           <a href="https://ctjm7.github.io/meet" target="_blank">
             <img src="img/meet-screenshot.png" class="project-img" alt="meet application website">
           </a>
+          <p class="links">
           <a href="https://github.com/ctjm7/meet" target="_blank">
-            <img src="img/github_icon.svg" class="project-github" alt="meet on github">
+            GitHub
           </a>
+          </p>
         </div>
         <div class="project-list__item">
-          <h3>Lorem Ipsum</h3>
+          <h3>See You at the Movies</h3>
+          <p>
+            A React application built on server-side code I created with a REST API and database. This app utilizes MERN (MongoDB, Express, React, and Node.js). It allows the user to view movie, director and genre information. You can create a profile and favorite movies list.
+          </p>
+          <a href="https://seeyouatthemovies.netlify.app" target="_blank">
+            <img src="img/movies-screenshot.png" class="project-img" alt="movies application website">
+          </a>
+
+          <p class="sub-text">Username: Testuser Password: Test123</p>
+          <p class="links">
+          <a href="https://github.com/ctjm7/movie-api-client" target="_blank">
+            GitHub
+          </a>
+
+        <a href="case-study.html">&nbsp;&nbsp;Case Study</a>
+
+      </p>
         </div>
         <div class="project-list__item">
-          <h3>Lorem Ipsum</h3>
+          <h3>Chat</h3>
+          <p>
+            A native chat app built with React Native. The app uses Google Firestore Database. Data is also stored locally for offline access. It provides users with a chat interface and options to share images and location. The user can choose a background color.
+          </p>
+          <img src="img/chat-screenshot.png" class="project-img chat-img" alt="chat application website">
+          <p class="links">
+          <a href="https://github.com/ctjm7/chat" target="_blank">
+            GitHub
+          </a>
+          </p>
         </div>
         <div class="project-list__item">
-          <h3>Lorem Ipsum</h3>
+          <h3>Pokédex</h3>
+          <p>
+            A JavaScript application that loads data from an external API. This app shows a list of Pokémon characters. You can view details about each character. The app uses Bootstrap to create a clean design.
+          </p>
+          <a href="https://ctjm7.github.io/js-app" target="_blank">
+            <img src="img/pokedex-screenshot.png" class="project-img" alt="pokedex application website">
+          </a>
+          <p class="links">
+          <a href="https://github.com/ctjm7/js-app" target="_blank">
+            GitHub
+          </a>
+          </p>
         </div>
-        <div class="project-list__item">
-          <h3>Your Project?</h3>
-          <div>
-        <a href="case-study.html">Case Study</a>
-      </div>
-        </div>
+
       </div>
     </div>
 
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
       <p></p>
       <div class="social-media">
         <a href="https://github.com/ctjm7" target="_blank">
@@ -84,7 +112,7 @@
           <img src="img/linkedin_icon.svg" alt="LinkedIn">
         </a>
       </div>
-    </footer>
+    </footer> -->
 
    <!-- This is to be checked later
      <script src="js/tota11y.min.js"></script> -->
