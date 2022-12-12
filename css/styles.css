@@ -411,10 +411,6 @@ margin: 3% 1%;
     display: none;
   }
 
-  .about-text {
-    width: 300px;
-    height: auto;
-  }
 }
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
@@ -487,5 +483,31 @@ margin: 3% 1%;
 
   .footer {
     display: none;
+  }
+
+  .work {
+    margin: 0 0;
+    padding: 0 0;
+    align-items: center;
+  }
+
+  .contact {
+    width: 350px;
+    height: auto;
+  }
+
+  .cv {
+    text-align: center;
+  }
+
+  .about-text {
+    width: 350px;
+    height: auto;
+    margin-right: 14px;;
+  }
+
+  .rainier {
+    width: 325px;
+    height: auto;
   }
 }
